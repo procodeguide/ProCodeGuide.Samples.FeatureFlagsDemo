@@ -1,0 +1,30 @@
+﻿@model Mobile
+@{
+    ViewData["Title"] = "Mobile Detailed Review";
+}
+<h1>@ViewData["Title"]</h1>
+
+<br />
+
+<table class="table table-responsive table-hover">
+    <tr>
+        <td><span style="font-weight:bold">Id</span></td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td><span style="font-weight:bold">Name</span></td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td><span style="font-weight:bold">Specfications</span></td>
+        <td>@Model.Specfication</td>
+    </tr>
+    <tr>
+        <td><span style="font-weight:bold">Rating</span></td>
+        <td>@Model.ReviewDetails.Rating</td>
+    </tr>
+    <tr>
+        <td><span style="font-weight:bold">Review</span></td>
+        <td>@Model.ReviewDetails.Remarks</td>
+    </tr>
+</table>
